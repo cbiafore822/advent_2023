@@ -8,13 +8,14 @@ use std::{
 };
 
 mod day_1;
+mod day_2;
 
 #[global_allocator]
 static PEAK_ALLOC: PeakAlloc = PeakAlloc;
 
 fn main() {
     let start = Local::now();
-    let res = day_1::get_calibration_value_with_words().unwrap();
+    let res = day_2::get_power_of_games().unwrap();
     let duration = (Local::now() - start).num_microseconds().unwrap();
     println!("Result: {}", res);
     println!("Elapsed time: {} us", duration);
